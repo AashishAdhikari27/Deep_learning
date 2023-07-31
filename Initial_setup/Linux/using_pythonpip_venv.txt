@@ -1,0 +1,51 @@
+# First we need to create a workspace for a proect we can either use docker or python virtual enviroment
+
+##So creating a python virtual enviroment :--
+
+
+## Best way (sometime due to pip conflict, while creating venv, requirements can't be installed properly):
+
+    # One time setup command : For setting up actual pip for Ubuntu Default Python using sudo command:
+        ==> sudo apt install python3-pip
+
+    # One time setup command : for installing virtualenv using sudo
+        ==> sudo apt instal python3-virtualenv
+
+    # Now, u can create virtualenv for python whenever you wants:
+        ==> virtualenv virtual_env_folder
+        
+    # Activate virtual environment:
+       SYNTAX : ==> source virtual_env_folder/bin/activate
+       
+     # For installing jupyter :
+            ==> python -m pip install jupyter
+
+     # for setting up seperate python kernel for virtual env:
+           ==> python -m ipykernel install --user --name=venv
+            eg: python -m ipykernel install --user --name=jupyter_env
+
+
+     
+      # For installing Tensorflow latest version:
+            ==> pip install tensorflow
+
+            NOTE: (Optional Error case) If auto termination/closing of terminal happens. 
+            So, to overcome that issue/error:
+                ==> pip install --no-cache-dir tensorflow
+
+        
+        Now, To execute/run jupyter notebook server in port 8888 tree:
+                ==> jupyter notebook
+
+      #To stop the virtual enviroment :
+            ==> deactivate
+            
+            
+
+        
+        
+  
+
+
+
+
