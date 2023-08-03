@@ -1,0 +1,27 @@
+
+
+ ## tf.constant :-
+    
+    --> Creates a constant tensor from a tensor-like object.
+    
+    Syntax:-
+       -->  tf.constant(
+                           value, dtype=None, shape=None, name='Const'
+                       )
+
+
+      -->    value: The value you want to assign to the constant tensor.
+            
+      -->   dtype: The data type of the tensor (e.g., tf.int32, tf.float32, etc.).
+      
+      -->   shape: The shape of the tensor (optional). If not provided, TensorFlow infers the shape based on the value.
+     
+      -->  name: An optional name for the constant tensor.
+      
+      
+      
+    
+    --> Yesle simply unchangable value (tensor) create garcha jun mathematical/ML operations maa use huncha
+    
+    
+      
