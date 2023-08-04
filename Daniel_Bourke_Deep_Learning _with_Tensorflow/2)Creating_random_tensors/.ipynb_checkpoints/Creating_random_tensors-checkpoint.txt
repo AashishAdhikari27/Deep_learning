@@ -1,0 +1,119 @@
+  
+  
+  ### FOR MORE INFORMATION YOU CAN GO TO TENSORFLOW DOCUMENTATION USING THE LINK :-https://www.tensorflow.org/api_docs/python/tf/all_symbols
+  
+  ## Creating random tensors :-
+ 
+  --> We have many ways of doing it
+  
+  
+   
+  ##*## Way 1:  Using tf.random.normal method
+   
+    --syntax:-
+             
+             --> tf.random.normal(
+                                    shape,
+                                    mean=0.0,
+                                    stddev=1.0,
+                                    dtype=tf.dtypes.float32,
+                                    seed=None,
+                                    name=None
+                                  )
+             
+             
+             --> yesle random tensor create garxa ,from normal distribution
+             
+             -->     The function tf.random.normal creates random numbers.
+
+             --> From Normal Distribution: These random numbers are generated in a way that they tend to follow the properties of a normal distribution, also known as a Gaussian distribution or bell curve. This distribution is characterized by its specific shape, where values cluster around a central point (mean) and decrease in frequency as they move away from the mean.
+               
+               
+      --> Args
+            shape 	A 1-D integer Tensor or Python array. The shape of the output tensor.
+            mean 	A Tensor or Python value of type dtype, broadcastable with stddev. The mean of the normal distribution.
+            stddev 	A Tensor or Python value of type dtype, broadcastable with mean. The standard deviation of the normal distribution.
+            dtype 	The float type of the output: float16, bfloat16, float32, float64. Defaults to float32.
+            seed 	A Python integer. Used to create a random seed for the distribution. (same tensor create garna use hunxa i.e jasko seed value same xa teko tensors pani same banxa)
+            name 	A name for the operation (optional).
+
+            Returns
+            A tensor of the specified shape filled with random normal values. 
+
+
+     -- example :-
+      
+        -->  normal_random_tensor = tf.random.normal(
+                                                        (4,3),
+                                                        mean=0.0,
+                                                        stddev=1.0,
+                                                       dtype=tf.dtypes.float32,
+                                                        seed=None,
+                                                        name=None
+                                                     )
+
+
+  
+  
+  ##*## Way-2  : Using tf.random.poisson method
+  
+         --Syntax:-
+            
+                  -->  tf.random.poisson(
+                                            shape,
+                                            lam,
+                                            dtype=tf.dtypes.float32,
+                                            seed=None,
+                                            name=None
+                                        )
+
+
+       --> This generates a random tensor following a Poisson distribution with specified average rate and shape.
+          
+       --> Args
+            shape  kun shape ko tensor banauni ho teskko shape dini
+            lam    The average rate of events in the Poisson distribution.
+            dtype 	The type of the output: float16, float32, float64, int32 or int64.
+            seed 	A Python integer. Used to create a random seed for the distributions. 
+            name 	Optional name for the operation. 
+            
+            
+        # example :-
+            
+            -->  poisson_random_tensor = tf.random.poisson(
+                                                            shape=(4, 4),
+                                                            lam=3.0,
+                                                            dtype=tf.dtypes.float32,
+                                                            seed=None,
+                                                            name=None
+                                                           )
+                                                           
+                                                           
+  ##*## Way-3: Using  tf.random.uniform method
+  
+       -- syntax :-
+            
+            ---> tf.random.uniform(
+                                    shape,
+                                    minval=0,
+                                    maxval=None,
+                                    dtype=tf.dtypes.float32,
+                                    seed=None,
+                                    name=None
+                                   )
+
+            ---> This generates a random tensor with values from a uniform distribution within a specified range.   
+            
+            ---> tf.random.uniform function generates random numbers in a way that each number has an equal chance of being picked, and these random numbers will be between the lowest and highest values you provide.
+            
+            
+            -- example:-
+              
+            ---> uniform_random_tensor = tf.random.uniform(
+                                                            shape=(3, 3),          # Shape of the tensor: 3 rows, 3 columns
+                                                            minval=0,              # Minimum value of the uniform distribution
+                                                            maxval=10,             # Maximum value of the uniform distribution
+                                                            dtype=tf.dtypes.int32,  # Data type of the tensor elements
+                                                            seed=None,             # Seed for reproducibility (optional)
+                                                            name=None              # Optional name for the operation
+                                                          )
