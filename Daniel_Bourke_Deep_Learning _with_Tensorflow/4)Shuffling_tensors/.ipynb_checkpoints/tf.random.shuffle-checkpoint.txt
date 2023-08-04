@@ -1,0 +1,40 @@
+ 
+ 
+   ## tf.random.shuffle function :-
+   
+   ---> This function in TensorFlow randomly reorders the elements along the first dimension of a tensor.
+   ---> along the dimension vannale rows ko order change garnu
+   
+   -- Syntax :-
+          
+          ---> tf.random.shuffle(
+                                  value, seed=None, name=None
+                                )
+    
+    
+    --- Arguments:-  value --	A Tensor to be shuffled.
+                     seed --  A Python integer. Used to create a random seed for the distribution.
+                     name --  A name for the operation (optional). 
+                     
+                     
+       
+       
+       -----------------------------------------------------------------------------------------------------------------------
+       
+       -->  # Random Seed Explanation: When we do things in a random way, like shuffling or generating random numbers, we often use something called a "random seed" to start the randomness. This seed helps us make sure that even though we're doing things randomly, we can repeat the randomness later if needed.
+
+ ## --> This randomness actually comes from two seeds. One is like a big global seed that affects everything, and the other is like a smaller seed for a specific thing we're doing (like shuffling images).
+
+ ## Setting the Global Seed: We can decide to set a global seed that affects everything we do that's random.
+
+   ## How Seeds Work Together:-
+
+    ---> No Seeds Set: If we don't set any seeds, the computer will pick a random one for us each time.
+
+   ---> Global Seed Set: If we only set the big global seed, the computer will use it to make sure our random things are kind of predictable but still different.
+ 
+    --->  Operation Seed Set: If we only set the smaller seed for a specific thing, the computer will use a default global seed along with it to decide the randomness.
+
+
+   --->   ## Both Seeds Set: If we set both the big global seed and the smaller seed, the computer will mix them together to decide how random things should be.
+       

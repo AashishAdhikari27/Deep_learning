@@ -1,0 +1,46 @@
+
+
+ ---> rarely use bhaye pani tf.ones() ra tf.zeros() use garera 0 matrai vayeko ra 1 matrai vayeko jun size/shape ko tensor banauna sakinxa
+  
+  
+  1) tf.zeros() function :-
+  
+  --> sabai zero bhako tensor create garxa
+  
+  -- syntax :-
+  
+           ---> tf.zeros(
+                            shape,
+                            dtype=tf.dtypes.float32,
+                            name=None
+                        )
+                        
+   -- example :-
+   
+           ---> tf.zeros(
+                        shape=(5,5),
+                         dtype=tf.dtypes.float32,
+                         name = None
+                        )
+                        
+                        
+   2) tf.ones() function :-
+  
+      --> sabai zero bhako tensor create garxa
+
+      -- syntax :-
+
+               ---> tf.ones(
+                                shape,
+                                dtype=tf.dtypes.float32,
+                                name=None
+                            )
+
+       -- example :-
+
+               ---> tf.ones(
+                            shape=(5,5),
+                             dtype=tf.dtypes.float32,
+                             name = None
+                            )
+  
