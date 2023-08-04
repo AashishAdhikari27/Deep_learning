@@ -1,0 +1,47 @@
+
+
+    ##  tf.Variable 
+    
+    --> tf.Variable is a type of tensor that allows its value to be modified after it is created.
+    
+    # Syntax :-
+    
+    -->tf.Variable(
+                    initial_value=None,
+                    trainable=None,
+                    validate_shape=True,
+                    caching_device=None,
+                    name=None,
+                    variable_def=None,
+                    dtype=None,
+                    import_scope=None,
+                    constraint=None,
+                    synchronization=tf.VariableSynchronization.AUTO,
+                    aggregation=tf.compat.v1.VariableAggregation.NONE,
+                    shape=None,
+                    experimental_enable_variable_lifting=True
+                  )
+                  
+     
+     # Example :-
+     
+     --> my_tensor = tf.Variable([[1, 2, 3], [4, 5, 6]], dtype=tf.float32)
+        
+        Output:-
+           -->        <tf.Variable 'Variable:0' shape=(2, 3) dtype=float32, numpy=
+                       array([[1., 2., 3.],
+                       [4., 5., 6.]], dtype=float32)>
+        
+
+      #  yesle tensor banauxa jasko value change garna milxa
+        
+      # mathi banako tensor ko kunai element/value change gareko
+      
+     -->  my_tensor[0, 1].assign(new_value)
+     
+      #  yesko output :-   <tf.Variable 'Variable:0' shape=(2, 3) dtype=float32, numpy=
+                            array([[1., 9., 3.],
+                           [4., 5., 6.]], dtype=float32)>
+
+
+

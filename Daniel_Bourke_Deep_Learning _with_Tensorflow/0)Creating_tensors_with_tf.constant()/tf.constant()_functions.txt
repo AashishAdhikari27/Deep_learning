@@ -12,7 +12,7 @@
 
       -->    value: The value you want to assign to the constant tensor.
             
-      -->   dtype: The data type of the tensor (e.g., tf.int32, tf.float32, etc.).
+      -->   dtype: The data type of the tensor (e.g., tf.int32, tf.float32,    etc.).
       
       -->   shape: The shape of the tensor (optional). If not provided, TensorFlow infers the shape based on the value.
      
