@@ -1,0 +1,131 @@
+
+   ## 1) 1D Tensor (Vector):
+
+      --->  Shape: (n,)
+      --->  Parameter: There's only one parameter, n, which represents the number of elements in the vector.
+      
+      -- eg :-
+
+        --->      Shape: (5,)
+                 [Apple, Banana, Orange, Mango, Grape]
+                 
+          
+          
+   
+   ## 2) 2D Tensor (Matrix):
+
+   --->  Shape: (m, n)
+       -- Parameters:
+                   i)  m: Number of rows.
+                   ii) n: Number of columns.
+                   
+                   
+       -- example :
+       
+           --->Shape: (2, 3)
+
+                 [[Apple, Banana, Orange],
+                 [Mango, Grape, Kiwi]]
+                 
+                 
+    ## 3) 3D Tensor :   
+
+     --->    Shape: (p, m, n)
+     
+                 Parameters:
+                    p: Number of "blocks" or "partitions."
+                    m: Number of rows within each block.
+                    n: Number of columns within each row.
+                    
+       -- eg :
+       
+         ---> Shape: (2, 2, 3)
+
+                [[[Apple, Banana, Orange],
+                  [Mango, Grape, Kiwi]],
+                  
+                 [[Strawberry, Pineapple, Watermelon],
+                  [Cherry, Peach, Pear]]]
+                  
+
+
+                 
+    ## 4) 4D Tensor :   
+    
+    ---> Shape: (q, p, m, n)
+    
+            Parameters:
+
+                q: Number of "super-blocks" or "groups of blocks."
+                p: Number of blocks within each super-block.
+                m: Number of rows within each block.
+                n: Number of columns within each row
+     
+     
+     --- eg :
+       
+        ---> Shape: (2, 2, 2, 3)
+
+            [[[[Apple, Banana, Orange],
+               [Mango, Grape, Kiwi]],
+               
+              [[Strawberry, Pineapple, Watermelon],
+               [Cherry, Peach, Pear]]],
+               
+               
+             [[[Blueberry, Raspberry, Blackberry],
+               [Lemon, Lime, Plum]],
+               
+              [[Apricot, Fig, Papaya],
+               [Guava, Cranberry, Pomegranate]]]]
+
+
+
+
+    ## 5) 5D Tensor :   
+    
+     --->      Shape: (r, q, p, m, n)
+     
+                    Parameters:
+                        r: Number of "hyper-super-blocks" or "groups of super-blocks."
+                        q: Number of super-blocks within each hyper-super-block.
+                        p: Number of blocks within each super-block.
+                        m: Number of rows within each block.
+                        n: Number of columns within each row.
+                        
+     
+     --- eg : 
+     
+       ---> Shape: (2, 2, 2, 2, 3)
+
+            [[[[[Apple, Banana, Orange],
+                [Mango, Grape, Kiwi]],
+                
+               [[Strawberry, Pineapple, Watermelon],
+                [Cherry, Peach, Pear]]],
+                
+                
+              [[[Blueberry, Raspberry, Blackberry],
+                [Lemon, Lime, Plum]],
+                
+               [[Apricot, Fig, Papaya],
+                [Guava, Cranberry, Pomegranate]]]],
+                
+                
+                
+                
+             [[[[Pineapple, Lemon, Mango],
+                [Kiwi, Orange, Strawberry]],
+                
+               [[Blackberry, Pear, Raspberry],
+                [Papaya, Blueberry, Guava]]],
+                
+                
+              [[[Cherry, Lime, Plum],
+                [Banana, Fig, Peach]],
+                
+               [[Watermelon, Cranberry, Grape],
+                [Apple, Pomegranate, Apricot]]]]]
+                
+                
+                
