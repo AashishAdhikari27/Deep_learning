@@ -1,0 +1,84 @@
+
+     ---> Expanding tensors vannale tensor ko dimension expand garnu ho
+     
+     
+     
+     # Expanding dimension using   tf.newaxis function :-
+     
+     -->   This function used to add a new empty axis (dimension) to a tensor.
+     
+     
+     
+     --- Syntax: 
+     
+             --->  tensor[tf.newaxis] or tf.newaxis
+     
+     
+     
+     ---- eg :-
+       
+       
+       
+       --->     Create a 1D tensor
+                tensor_1d = tf.constant([1, 2, 3])
+
+                # Add a new axis using tf.newaxis
+                tensor_with_new_axis = tensor_1d[..., tf.newaxis]
+                
+                
+                ---> yeha " ... " yo three dots lai "ellipsis" vanninxa ,yo chai python ko shorthand notation ho to 
+                     jasle k all dimesions vanni bujhauxa .
+                     
+                ---> yesle k denote garxa vane existing tensor ko sabai dimensions lai preserve garni vanni bujhxa...so sab dimesions lai 
+                     preserve garera tensor ma extra dimension add garxa.
+                     
+                     
+                ---> hamle "[:, tf.newaxis]"  , "[:, tf.newaxis, :] " yesto notations haru pani use garna sakinxa
+                
+                ---> "[:, tf.newaxis]" yesma ":"yesle k denote garxa vane first dimension ko sabai elements select garera 
+                     naya dimension add garxa 
+                     
+                     
+                     
+                ---> "[:, tf.newaxis, :]  yesma suru ko notation le first dimesion ko elements select garxa , ani middle maa new dimension 
+                      add garxa ani existing dimesion ko sabai elements select garxa
+                      
+                      
+
+
+
+
+    ### Another way of expanding dimension :- using tf.expand_dims function
+    
+    ---> tf.expand_dims function le aafule chaheko position(axis) maa new dimenion add garxa
+    
+    
+    --- Syntax :-
+    
+        ---> tf.expand_dims(input, axis)
+        
+        
+          
+            -- input : input vanna le tensor jasko dimension add garna lako
+            
+            -- axis :axis le chai kun position maa new dimension addmgarni ho tyo janauxa 
+            
+                    jasto ki axis = -1 ,le last maa dimesion add garxa ,axis = 0 le suru ma testai testai 
+                    
+                    
+          
+      ---- example :
+      
+      
+           --->  # Create a 1D tensor
+           
+                tensor_1d = tf.constant([1, 2, 3])
+
+
+
+                # Expand dimensions along axis 1
+                
+                expanded_tensor = tf.expand_dims(tensor_1d, axis=1)
+            
+            
+    
